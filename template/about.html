@@ -3,58 +3,7 @@
 {% block body %} 
 
 
-<div class="about">
 
-    <div class="slider">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="../static/img1/5.png" class="d-block w-100" alt="...">
-              </div>
-             
-            </div>
-          </div>
-    </div>
-
-    <section class="jumbotron text-center">
-        <div class="container">
-          <h1>Contact With Us</h1>
-          <p class="lead text-muted">If you want to contact with us then submit this from, insaallah we will contact with you.</p>
-          
-        </div>
-      </section>
-
-    <div class="container">
-        <form action="/about" method="post">
-            {% csrf_token %}
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Name</label>
-                <input type="name" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your name">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Mobile Number</label>
-                <input type="mobile" name="mobile" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Mobile Number">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Why you want to Contact with us?</label>
-                <textarea name="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-           
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" required id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1" >Check me out</label>
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-    </div>
-
-</div>
 
 
 {% endblock body %}
